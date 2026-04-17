@@ -1,0 +1,7 @@
+𝗤𝘂𝗲𝘀𝘁𝗶𝗼𝗻 𝟭: Multithreaded Job Scheduler
+Tasks have dependencies (A → B → C).
+You’re given helper APIs like getDependentTasks() to discover the DAG. Starting task is returned when input is blank. Each task has a doWork() function to execute. Rules:
+* Parent tasks must finish before child tasks start.
+* If any task throws an exception → stop everything immediately
+* No built-in Java concurrency libraries.
+* Build your own blocking queue, thread pool, executor, using locks from scratch. Basically: “Here’s Java, now pretend java.util.concurrent never existed.” 
